@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite hostname="ININTDT115547" name="com.selenium.annotations.SampleTest" tests="6" failures="0" timestamp="17 Apr 2017 08:38:23 GMT" time="0.031" errors="0">
+  <testcase name="testLogin" time="0.0" classname="com.selenium.annotations.SampleTest"/>
+  <testcase name="testLogin" time="0.0" classname="com.selenium.annotations.SampleTest"/>
+  <testcase name="testChangePassword" time="0.0" classname="com.selenium.annotations.SampleTest"/>
+  <testcase name="logout" time="0.0" classname="com.selenium.annotations.SampleTest"/>
+  <testcase name="sendMail" time="0.0" classname="com.selenium.AppTest"/>
+  <testcase name="sampletest" time="0.0" classname="com.selenium.SampleTest"/>
+</testsuite>

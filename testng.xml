@@ -1,0 +1,18 @@
+<suite name="My suite">
+
+<listeners>
+    <listener class-name="com.listners.customListner" />
+</listeners>
+
+  <test name="AppTest">
+		<classes>
+			<class name="com.selenium.AppTest" />
+		</classes>
+	</test>
+	
+	<test name="SampleTest">
+		<classes>
+			<class name="com.selenium.SampleTest" />
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="6" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="31" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="31" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+      <class name="com.selenium.AppTest">
+        <test-method status="PASS" signature="sendMail()" name="sendMail" duration-ms="0" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+        </test-method>
+      </class>
+      <class name="com.selenium.annotations.SampleTest">
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)" name="testLogin" duration-ms="0" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P3]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="testLogin(java.lang.String, java.lang.String)" name="testLogin" duration-ms="0" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[U4]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[P5]]>
+              </value>
+            </param>
+          </params>
+        </test-method>
+        <test-method status="PASS" signature="logout()" name="logout" duration-ms="0" started-at="2017-04-17T14:08:23Z" depends-on-methods="com.selenium.annotations.SampleTest.testChangePassword, com.selenium.annotations.SampleTest.testLogin" finished-at="2017-04-17T14:08:23Z">
+        </test-method>
+        <test-method status="PASS" signature="testChangePassword()" name="testChangePassword" duration-ms="0" started-at="2017-04-17T14:08:23Z" depends-on-methods="com.selenium.annotations.SampleTest.testLogin" finished-at="2017-04-17T14:08:23Z">
+        </test-method>
+      </class>
+      <class name="com.selenium.SampleTest">
+        <test-method status="PASS" signature="sampletest()" name="sampletest" duration-ms="0" started-at="2017-04-17T14:08:23Z" finished-at="2017-04-17T14:08:23Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+
+ 
+<suite name="TestSuite" parallel="tests"   >
+ 
+
+
+ 
+<test name="Chrome">
+ 
+<parameter name="browser" value="chrome" />
+ 
+<classes>
+ 
+<class name="com.selenium.CrossBrowsers">
+ 
+</class>
+ 
+</classes>
+ 
+</test>
+
+<test name="Firefox">
+ 
+<parameter name="browser" value="firefox" />
+ 
+<classes>
+ 
+<class name="com.selenium.CrossBrowsers">
+ 
+</class>
+ 
+</classes>
+ 
+</test>
+ 
+</suite>

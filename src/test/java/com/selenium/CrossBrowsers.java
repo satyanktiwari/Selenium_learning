@@ -67,7 +67,7 @@ else if(browser.equalsIgnoreCase("ie")){
  
             System.setProperty("webdriver.ie.driver",System.getProperty("user.dir")+"\\drivers\\IEDriverServer.exe");
  
-            //create chrome instance
+            //create IE instance
  
             driver = new InternetExplorerDriver();
  

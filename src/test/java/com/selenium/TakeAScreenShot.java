@@ -15,26 +15,31 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class TakeAScreenShot {
 	public static void main(String[] args) throws IOException {
 		// TODO Auto-generated method stub
-		Date date= new Date();
-		 Timestamp t = new Timestamp(date.getTime());
-		 System.out.println(t);
-		 String dateNow = t.toString().replace(":","_");
-		// Initialize WebDriver
-		WebDriver driver = new FirefoxDriver();
-		// Wait For Page To Load
+		for (int x=1;x<3;x++){
+			Date date= new Date();
+			 Timestamp t = new Timestamp(date.getTime());
+			 System.out.println(t);
+			 String dateNow = t.toString().replace(":","_");
+			// Initialize WebDriver
+//			WebDriver driver = new FirefoxDriver();
+			 String FirefoxDriverPath = "C:\\Selenium_webdriver_java\\Selenium\\drivers\\geckodriver.exe";
+			    System.setProperty("webdriver.gecko.driver", FirefoxDriverPath);
+			    WebDriver driver = new FirefoxDriver();
+			// Wait For Page To Load
 
-		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
-		// Go to URL
-		driver.get("http://www.yahoo.com/");
-		// Maximize Window
-		driver.manage().window().maximize();
-		// Take ScreenShot
-		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	//	FileUtils.copyFile(scrFile, new File("./Screenshots/"+dateNow+".png"));
-		FileUtils.copyFile(scrFile, new File(dateNow+".png"));
-		
-		// Close Driver
-		driver.quit();
+			driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+			// Go to URL
+			driver.get("http://www.yahoo.com/");
+			// Maximize Window
+			driver.manage().window().maximize();
+			// Take ScreenShot
+			File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		//	FileUtils.copyFile(scrFile, new File("./Screenshots/"+dateNow+".png"));
+			FileUtils.copyFile(scrFile, new File(dateNow+".png"));
+			
+			// Close Driver
+			driver.quit();
+		}
 		}
 		
 }
